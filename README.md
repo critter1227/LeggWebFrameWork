@@ -1,8 +1,8 @@
 # LeggWebFrameWork
 
-# Collected And Customized Framework For Website Development
+## Collected And Customized Framework For Website Development
 
-Credits
+### Credits
 
 *   **Side Menu**
 *   http://purecss.io/layouts/side-menu/

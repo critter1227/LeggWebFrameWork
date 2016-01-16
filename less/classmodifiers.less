@@ -1,4 +1,7 @@
 // out: ../css/classmodifiers.min.css, compress: true
+@primary: red;
+@secondary: blue;
+@accent: green;
 .text-bold {
   font-weight: bold;
 }
@@ -43,4 +46,210 @@
 }
 .text-justify {
   text-align: justify;
+}
+.shadow {
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.25);
+  -moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.25);
+  box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.25);
+}
+.text-highlight {
+  background: rgb(200, 200, 200);
+}
+
+.background-primary-dark-9 {
+  background: darken(@primary, 90%);
+}
+.background-primary-dark-8 {
+  background: darken(@primary, 80%);
+}
+.background-primary-dark-7 {
+  background: darken(@primary, 70%);
+}
+.background-primary-dark-6 {
+  background: darken(@primary, 60%);
+}
+.background-primary-dark-5 {
+  background: darken(@primary, 50%);
+}
+.background-primary-dark-4 {
+  background: darken(@primary, 40%);
+}
+.background-primary-dark-3 {
+  background: darken(@primary, 30%);
+}
+.background-primary-dark-2 {
+  background: darken(@primary, 20%);
+}
+.background-primary-dark-1 {
+  background: darken(@primary, 10%);
+}
+.background-primary {
+  background: @primary;
+}
+.background-primary-light-1 {
+  background: lighten(@primary, 10%);
+}
+.background-primary-light-1 {
+  background: lighten(@primary, 10%);
+}
+.background-primary-light-2 {
+  background: lighten(@primary, 20%);
+}
+.background-primary-light-3 {
+  background: lighten(@primary, 30%);
+}
+.background-primary-light-4 {
+  background: lighten(@primary, 40%);
+}
+.background-primary-light-5 {
+  background: lighten(@primary, 50%);
+}
+.background-primary-light-6 {
+  background: lighten(@primary, 60%);
+}
+.background-primary-light-7 {
+  background: lighten(@primary, 70%);
+}
+.background-primary-light-8 {
+  background: lighten(@primary, 80%);
+}
+.background-primary-light-9 {
+  background: lighten(@primary, 90%);
+}
+
+
+.background-secondary-dark-9 {
+  background: darken(@secondary, 90%);
+}
+.background-secondary-dark-8 {
+  background: darken(@secondary, 80%);
+}
+.background-secondary-dark-7 {
+  background: darken(@secondary, 70%);
+}
+.background-secondary-dark-6 {
+  background: darken(@secondary, 60%);
+}
+.background-secondary-dark-5 {
+  background: darken(@secondary, 50%);
+}
+.background-secondary-dark-4 {
+  background: darken(@secondary, 40%);
+}
+.background-secondary-dark-3 {
+  background: darken(@secondary, 30%);
+}
+.background-secondary-dark-2 {
+  background: darken(@secondary, 20%);
+}
+.background-secondary-dark-1 {
+  background: darken(@secondary, 10%);
+}
+.background-secondary {
+  background: @secondary;
+}
+.background-secondary-light-1 {
+  background: lighten(@secondary, 10%);
+}
+.background-secondary-light-1 {
+  background: lighten(@secondary, 10%);
+}
+.background-secondary-light-2 {
+  background: lighten(@secondary, 20%);
+}
+.background-secondary-light-3 {
+  background: lighten(@secondary, 30%);
+}
+.background-secondary-light-4 {
+  background: lighten(@secondary, 40%);
+}
+.background-secondary-light-5 {
+  background: lighten(@secondary, 50%);
+}
+.background-secondary-light-6 {
+  background: lighten(@secondary, 60%);
+}
+.background-secondary-light-7 {
+  background: lighten(@secondary, 70%);
+}
+.background-secondary-light-8 {
+  background: lighten(@secondary, 80%);
+}
+.background-secondary-light-9 {
+  background: lighten(@secondary, 90%);
+}
+
+
+.background-accent-dark-9 {
+  background: darken(@accent, 90%);
+}
+.background-accent-dark-8 {
+  background: darken(@accent, 80%);
+}
+.background-accent-dark-7 {
+  background: darken(@accent, 70%);
+}
+.background-accent-dark-6 {
+  background: darken(@accent, 60%);
+}
+.background-accent-dark-5 {
+  background: darken(@accent, 50%);
+}
+.background-accent-dark-4 {
+  background: darken(@accent, 40%);
+}
+.background-accent-dark-3 {
+  background: darken(@accent, 30%);
+}
+.background-accent-dark-2 {
+  background: darken(@accent, 20%);
+}
+.background-accent-dark-1 {
+  background: darken(@accent, 10%);
+}
+.background-accent {
+  background: @accent;
+}
+.background-accent-light-1 {
+  background: lighten(@accent, 10%);
+}
+.background-accent-light-1 {
+  background: lighten(@accent, 10%);
+}
+.background-accent-light-2 {
+  background: lighten(@accent, 20%);
+}
+.background-accent-light-3 {
+  background: lighten(@accent, 30%);
+}
+.background-accent-light-4 {
+  background: lighten(@accent, 40%);
+}
+.background-accent-light-5 {
+  background: lighten(@accent, 50%);
+}
+.background-accent-light-6 {
+  background: lighten(@accent, 60%);
+}
+.background-accent-light-7 {
+  background: lighten(@accent, 70%);
+}
+.background-accent-light-8 {
+  background: lighten(@accent, 80%);
+}
+.background-accent-light-9 {
+  background: lighten(@accent, 90%);
+}
+
+
+.background-primary-invert {
+  background: spin(@primary, 180);
+}
+
+.background-secondary-invert {
+  background: spin(@secondary, 180);
+}
+
+.background-accent-invert {
+  background: spin(@accent, 180);
 }
