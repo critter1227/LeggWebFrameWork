@@ -2,6 +2,8 @@
 
 ## Collected And Customized Framework For Website Development
 
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/critter1227/LeggWebFrameWork/master/css/LeggWebFrameWork.min.css">
+
 ### Credits
 
 *   **Side Menu**
