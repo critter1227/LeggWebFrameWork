@@ -1,4 +1,4 @@
-// out: ../css/classmodifiers.min.css, compress: true
+// out: ../../css/parts/classmodifiers.min.css, compress: true
 @primary: red;
 @secondary: blue;
 @accent: green;
@@ -47,15 +47,46 @@
 .text-justify {
   text-align: justify;
 }
-.shadow {
-  -webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.25);
-  -moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.25);
-  box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.25);
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.z-depth-1-half {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.z-depth-2 {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.z-depth-3 {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.z-depth-4 {
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+.z-depth-5 {
+  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
 .text-highlight {
   background: rgb(200, 200, 200);
 }
-
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: @accent;
+}
+img.circle {
+  border-radius: 100%;
+}
+img.responsive-width {
+  width: 100%;
+  height: auto;
+}
+img.responsive-height {
+  height: 100%;
+  width: auto;
+}
 .background-primary-dark-9 {
   background: darken(@primary, 90%);
 }
@@ -116,8 +147,6 @@
 .background-primary-light-9 {
   background: lighten(@primary, 90%);
 }
-
-
 .background-secondary-dark-9 {
   background: darken(@secondary, 90%);
 }
@@ -178,8 +207,6 @@
 .background-secondary-light-9 {
   background: lighten(@secondary, 90%);
 }
-
-
 .background-accent-dark-9 {
   background: darken(@accent, 90%);
 }
@@ -240,16 +267,122 @@
 .background-accent-light-9 {
   background: lighten(@accent, 90%);
 }
-
-
 .background-primary-invert {
   background: spin(@primary, 180);
 }
-
 .background-secondary-invert {
   background: spin(@secondary, 180);
 }
-
 .background-accent-invert {
   background: spin(@accent, 180);
+}
+@media only screen and (min-width: 360px) {
+  .flow-text {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 390px) {
+  .flow-text {
+    font-size: 1.224rem;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .flow-text {
+    font-size: 1.248rem;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .flow-text {
+    font-size: 1.272rem;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .flow-text {
+    font-size: 1.296rem;
+  }
+}
+@media only screen and (min-width: 510px) {
+  .flow-text {
+    font-size: 1.32rem;
+  }
+}
+@media only screen and (min-width: 540px) {
+  .flow-text {
+    font-size: 1.344rem;
+  }
+}
+@media only screen and (min-width: 570px) {
+  .flow-text {
+    font-size: 1.368rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .flow-text {
+    font-size: 1.392rem;
+  }
+}
+@media only screen and (min-width: 630px) {
+  .flow-text {
+    font-size: 1.416rem;
+  }
+}
+@media only screen and (min-width: 660px) {
+  .flow-text {
+    font-size: 1.44rem;
+  }
+}
+@media only screen and (min-width: 690px) {
+  .flow-text {
+    font-size: 1.464rem;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .flow-text {
+    font-size: 1.488rem;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .flow-text {
+    font-size: 1.512rem;
+  }
+}
+@media only screen and (min-width: 780px) {
+  .flow-text {
+    font-size: 1.536rem;
+  }
+}
+@media only screen and (min-width: 810px) {
+  .flow-text {
+    font-size: 1.56rem;
+  }
+}
+@media only screen and (min-width: 840px) {
+  .flow-text {
+    font-size: 1.584rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .flow-text {
+    font-size: 1.608rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .flow-text {
+    font-size: 1.632rem;
+  }
+}
+@media only screen and (min-width: 930px) {
+  .flow-text {
+    font-size: 1.656rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .flow-text {
+    font-size: 1.68rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .flow-text {
+    font-size: 1.2rem;
+  }
 }

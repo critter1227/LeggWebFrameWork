@@ -1,35 +1,17 @@
-(function(window, document) {
-
-  var body = document.body,
-    menu = document.getElementById('menu'),
-    menuLink = document.getElementById('menuLink');
-
-  function toggleClass(element, className) {
-    var classes = element.className.split(/\s+/),
-      length = classes.length,
-      i = 0;
-
-    for (; i < length; i++) {
-      if (classes[i] === className) {
-        classes.splice(i, 1);
-        break;
+! function(e, n) {
+  function t(e, n) {
+    for (var t = e.className.split(/\s+/), i = t.length, a = 0; i > a; a++)
+      if (t[a] === n) {
+        t.splice(a, 1);
+        break
       }
-    }
-    // The className is not found
-    if (length === classes.length) {
-      classes.push(className);
-    }
-
-    element.className = classes.join(' ');
+    i === t.length && t.push(n), e.className = t.join(" ")
   }
-
-  menuLink.onclick = function(e) {
-    var active = 'active';
-
-    e.preventDefault();
-    toggleClass(body, active);
-    toggleClass(menu, active);
-    toggleClass(menuLink, active);
-  };
-
-}(this, this.document));
+  var i = n.body,
+    a = n.getElementById("menu"),
+    c = n.getElementById("menuLink");
+  c.onclick = function(e) {
+    var n = "active";
+    e.preventDefault(), t(i, n), t(a, n), t(c, n)
+  }
+}(this, this.document);
