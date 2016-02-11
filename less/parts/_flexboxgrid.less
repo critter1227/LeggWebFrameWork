@@ -1,12 +1,8 @@
 // out: ../../css/parts/flexbox.min.css, compress: true
 @media only screen and (max-width:64em) {
   .hide-xs {
-    display: none;
+    display: none !important;
   }
-}
-.hide-xs+,
-.hide {
-  display: none;
 }
 .container-fluid,
 .container {
@@ -329,17 +325,17 @@
 }
 @media only screen and (min-width: 48em) and (max-width:64em) {
   .hide-sm {
-    display: none;
+    display: none !important;
   }
 }
 @media only screen and (max-width:64em) {
-  .hide-sm- {
-    display: none;
+  .hide-sm-down {
+    display: none !important;
   }
 }
 @media only screen and (min-width: 48em) {
-  .hide-sm+ {
-    display: none;
+  .hide-sm-up {
+    display: none !important;
   }
   .container {
     width: 49rem;
@@ -560,18 +556,18 @@
   }
 }
 @media only screen and (max-width: 75em) and (min-width: 64em) {
-  .hide-me {
-    display: none;
+  .hide-md {
+    display: none !important;
   }
 }
 @media only screen and (max-width: 75em) {
-  .hide-me- {
-    display: none;
+  .hide-md-down {
+    display: none !important;
   }
 }
 @media only screen and (min-width: 64em) {
-  .hide-me+ {
-    display: none;
+  .hide-md-up {
+    display: none !important;
   }
   .container {
     width: 65rem;
@@ -793,7 +789,7 @@
 }
 @media only screen and (min-width: 75em) {
   .hide-lg {
-    display: none;
+    display: none !important;
   }
   .container {
     width: 76rem;
